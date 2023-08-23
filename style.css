@@ -1,0 +1,275 @@
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #71c2e2;
+    color: #faf604;
+  }
+  
+  /* cibler des tailles d'ecran specifiques */
+  @media screen and (max-width:300px) {
+/* ecrire le CSS dans le block-code */
+    }
+
+    @font-face {
+        font-family: "chathurabold";
+        src: url("../font/chathura_bold_macroman/chachathura-bold-webfont.eot");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* nouvelles polices interessante */
+    @font-face {
+        font-family: "chathurabold";
+        src: url("../font/chathura_bold_macroman/chachathura-bold-webfont.eot");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #paragraphe1 {
+        border-bottom-style: inset;
+        border-width: 0.5px;
+        border-color: black;
+        border-top-style: groove;
+    }
+
+
+/* Relative vs Absolue */
+.box-1, .box-2, .box-3, .box-4 {
+    display: block;
+    justify-content: center
+    align-items: center;
+    
+}
+.box-1 {
+    padding: 20px;
+    margin: 1px;
+    width: 300px;
+    height: 250px;
+    background: #b7d473;
+    position: relative;
+    left: 30px;
+
+    align-items: center;
+}
+
+.box-2 {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background: #fad;
+}
+.box-2 {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.box-3 {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 30px;
+    background-color: rgb(204, 64, 64);
+}
+
+/* retirer les balles et les marge de remplissage */
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    background-color: #e6c69d;
+} 
+
+/* barre de naviation verticale */
+li a {
+    display: block;
+    color: #ebc310e3;
+    padding: 8px 0 8px 16px;  
+    text-decoration: none;
+}
+
+/* changer la couleur du lien en flotage */
+li a:hover {
+    background-color: chartreuse;
+    color: white;
+}
+
+/* ajouter une classe active aux liens de la barre */
+.active {
+    background-color: yellow;
+    color: white;
+}
+
+/* centrer les liens et ajouter des bordures */
+ul {
+    border: 1px solid #555;
+}
+li {
+    text-align: center;
+    border-bottom: 1px solid #080808;
+} 
+
+/* police roboto */
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 32px;
+    color: rgb(117, 114, 109);
+    
+}
+
+/* en utilisant l'attribut class en html pour changer la couleur du paragraphe */
+.green {
+    color: green;
+
+}
+article>p {
+    font-weight: bold;
+    background-color: #a35454;
+    color: #ada9a9;
+    padding:.8em;
+}
+    /* combinateur */
+    /* combinateur descendant */
+    .box p {
+        color: cadetblue;
+    }
+    /* combinateur enfants */
+    
+/* combinateur general de freres et soeurs */
+h1+p {
+    font-weight: bold;
+    background-color: #ada9a9;
+    color: #a35454;
+    margin: 1%;
+    padding: 1%;
+    
+}
+    /* combinateur  */
+h1+p
+    {
+        
+    }
+    .crumbs ol {list-style-type: none; padding-left: 0;}
+    .crumbs {display: inline-block;}
+    h4 {
+        
+        color: black;
+        
+    }
+    h4+p {
+        background-color: #cc9d66;
+        color: black;
+        padding: 1em;
+        
+        
+    }
+    .title{
+        color: rgb(148, 127, 9);
+    } 
+    
+    
+    h3 
+    .red,#redElement {
+        color: rgb(100, 51, 51);
+    } 
+    /* combinateur de freres et soeurs adjacents */
+    h3+p {
+        font-weight: bold;
+        background-color: darkkhaki;
+        color: black;
+        padding: 3em;
+        border-width: 1px solid black; 
+        border-style: groove;
+        border-color: white;
+    }
+    article>p {
+    font-weight: bold;
+    background-color: darkgrey;
+    color: #fff;
+    padding: 5em
+}
+
+h5 {
+    border: 1px rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    font-size: 20px;
+}
+
+/* combinateur general de freres et soeurs */
+h2~p {
+    font-weight: bold;
+    background: #ada9a9;
+    color: black;
+    padding: 1em;
+
+}
+    
+/* bordure */
+#red-bordered {
+    border: 2px dashed;
+    height: 25px; width: 40px;
+} 
+
+/* pseudo-classe CSS */
+a:link {
+color: rgb(8, 151, 27);
+}
+a:visited {
+    color: rgb(59, 7, 180);
+}
+/* pour que le texte clignote en couleur */
+/* div:hover {
+    color: tomat;
+} */
+a:active {
+    color: greenyellow;
+}
+ 
+/* Modele de boite CSS */
+.box {
+    padding: 50px; padding: right 50px; padding: bottom 50px; padding: left 50px;
+}
+
+/* Marge */
+div {
+margin-top: 10px; 
+margin-bottom: 10px;
+margin-left: 15px; 
+margin-right: 20px;
+} 
+
+
+
+/* systeme de grilles */
+
+    /* header { grid-area: topbar; } */
+    /* aside  { grid-area: ads; }
+    article { grid-area:content; }
+    nav { grid-area: sidebar; }
+    footer { grid-area: footer; } */
+
+/* main {
+    grid-template-columns: repeat(1fr 3fr 1fr);
+    grid-auto-rows: minmax(50px, auto);
+} */
+
+/* systeme de grille CSS lines */
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-rows: 100px 200px 300px;
+    } */
+/* systeme de grille: affichage */
+/* .item-a {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: row 1- start;
+    grid-column-end: 3;
+} */
